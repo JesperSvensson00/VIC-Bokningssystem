@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  --background: #eee;
+  --skyblue: #6298d2;
+  --kthblue: #004791;
+  --sand: rgb(235, 229, 224);
+  --marine: rgb(0, 0, 97);
+  --lightblue: rgb(222, 240, 255);
+}
+
+body {
+  background-color: #eee;
+  margin: 0px;
+  font-family: "Figtree";
+  font-size: 22px;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+  font-size: xx-large;
+  background-color: rgb(98, 152, 210);
+  margin: 20px;
+  padding: 70px;
+  border-radius: 5px;
+}
+
+p {
+  text-align: center;
+  padding: 0px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: rgb(0, 71, 145);
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+}
+.navbar li {
+  float: left;
+}
+.navbar a {
+  color: #eee;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: rgb(98, 152, 210);
+}
+.CTA {
+  color: #eee;
+  background-color: rgb(98, 152, 210);
+  text-align: center;
+  font-size: larger;
+  width: 50%;
+
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 15px;
+}
+.CTA:hover {
+  background-color: rgb(0, 71, 145);
+}
+.text {
+  align-items: right;
+  padding: 10px;
+  margin: 12px;
+  border-radius: 5px;
+  width: 50%;
+}
+.contain {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: baseline;
+  gap: 10px;
+}
+.contain div {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  align-items: right;
+  padding: 10px;
+  margin: 12px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.panel > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

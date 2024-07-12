@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="static/assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Figtree"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="static/styles/main.css" />
+    <script src="static/scripts/main.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Hem</a></li>
+        <li>
+          <a
+            href="https://www.kth.se/cs/cst/research/vicstudio/the-visualization-studio-1.859336"
+            >Om oss</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.kth.se/places/room/id/ae9e43c4-cb44-4d47-af73-895d2a8c24c6"
+            target="_blank"
+            title="Länk till platsinfo!:D"
+            >Hitta hit</a
+          >
+        </li>
+        <li style="float: right"><a href="/admin">Admin</a></li>
+      </ul>
+    </nav>
+
+    <h1 id="greeting">Admin portalen</h1>
+
+    <div id="loginPanel" class="panel">
+      <p>Logga in för att se och skapa möten eller studiebesök!</p>
+      <div>
+        <input id="emailInput" type="text" placeholder="Epost-adress" />
+        <!-- <input type=="text" placeholder="Lösenord" hidden /> -->
+        <button class="CTA" onclick="adminLogin()">Logga in</button>
+      </div>
+      <div>
+        <button class="CTA" onclick="adminGetGroups()">Hämta grupper</button>
+        <div id="groupList"></div>
+      </div>
+    </div>
+
+    <div id="menuPanel" class="panel" hidden>
+      <div>
+        <p>Lägg till en ny användare</p>
+        <input id="newUserEmail" type="text" placeholder="Epost-adress" />
+        <input id="newUserName" type="text" placeholder="Namn" />
+        <label for="newUserAdmin">Admin</label
+        ><input id="newUserAdmin" name="newUserAdmin" type="checkbox" />
+        <button class="CTA" onclick="addUser()">Lägg till användare</button>
+      </div>
+    </div>
+  </body>
+</html>
